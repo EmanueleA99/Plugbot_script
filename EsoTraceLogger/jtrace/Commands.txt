@@ -1,0 +1,10 @@
+PRE: install jre/jdk --> sudo apt install default-jdk
+
+For SYS
+	java -jar jtracecapture.jar -o testSYS.esotrace 172.16.250.248 -p 21005
+
+For IVI
+	java -jar jtracecapture.jar -o testSYS.esotrace 172.16.250.248 -p 21002
+
+For ConMod (adb forward tcp:21002 tcp:21002 )
+	java -jar jtracecapture.jar -o testConmod.esotrace 127.0.0.1 -p 21002
