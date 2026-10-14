@@ -1,0 +1,19 @@
+attivare l'ambiente:
+
+cd ~/Documenti/Plugbot3_11_05_2025/Plugbot3_11_05_2025 
+source plugbot/bin/activate
+
+
+Lanciare lo script
+
+script -c 'export PYTHONPATH=/home/emanuele/Documenti/Plugbot3_11_05_2025/Plugbot3_11_05_2025/plugbot/lib/python3.12/site-packages/can_bus_tool:/home/emanuele/Documenti/Plugbot3_11_05_2025/Plugbot3_11_05_2025/plugbot/lib/python3.12/site-packages:$PYTHONPATH && /home/emanuele/Documenti/Plugbot3_11_05_2025/Plugbot3_11_05_2025/plugbot/bin/python3 -m plugbot wireless \
+--bluetooth_address=94:45:60:28:95:87 \
+--verbosity=1 \
+--connection_switch_method=can_bus_controller \
+--can_manager=oem \
+--device_serial=3B020DLJH001ZN \
+--hu_serial=172.16.250.248:5555 \
+--label_external_known_failures=/home/emanuele/Documenti/Plugbot3_11_05_2025/Plugbot3_11_05_2025/known_failures.json \
+--log_dir=/home/emanuele/Downloads/Logs/out \
+-o /home/emanuele/Downloads/Logs/out' \
+/home/emanuele/Downloads/Logs/out/plugbot.log
